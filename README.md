@@ -2,7 +2,6 @@
 ## launch ubuntu instance
 ## setup Jenkins on EC2
 
-
 # install java
 ```
 sudo apt-get update
