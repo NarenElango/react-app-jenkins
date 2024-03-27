@@ -7,6 +7,12 @@ pipeline {
                 sh "npm run build"
             }
         }
+        stage("Deploy"){
+            steps { 
+                sh "sudo rm -rf /var/www/html/*"
+                sh "sudo cp -r ${WORKSPACE}/react-app/dist/* /var/www/html/"
+            }
+        }
         
     }
 }
