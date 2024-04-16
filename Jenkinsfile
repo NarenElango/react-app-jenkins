@@ -7,6 +7,7 @@ pipeline {
                 sh "npm run build"
             }
         }
+		
         stage("Deploy to"){
             steps { 
                 sh "rm -rf /var/www/html/*"
