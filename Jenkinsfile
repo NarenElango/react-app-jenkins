@@ -9,7 +9,7 @@ pipeline {
         }
         stage("Deploy to"){
             steps { 
-                sh "rm -rf /var/www/html/"
+                sh "rm -rf /var/www/html/*"
                 sh "cp -r /var/lib/jenkins/workspace/react-app/dist/* /var/www/html/"
             }
         }
