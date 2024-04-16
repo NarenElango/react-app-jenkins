@@ -10,7 +10,7 @@ pipeline {
         stage("Deploy"){
             steps { 
                 sh " sudo rm -rf /var/www/html/"
-                sh "cp -r ${WORKSPACE}/react-app/dist/* /var/www/html/"
+                sh "cp -r /var/lib/jenkins/workspace/react-app/dist/* /var/www/html/"
             }
         }
         
