@@ -7,7 +7,7 @@ pipeline {
                 sh "npm run build"
             }
         }
-        stage("Deploy"){
+        stage("Deploy to nginx webserver"){
             steps { 
                 sh " rm -rf /var/www/html/"
                 sh "cp -r /var/lib/jenkins/workspace/react-app/dist/* /var/www/html/"
