@@ -28,3 +28,16 @@ sudo apt-get install -y curl
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
+# install nginx webserver
+```
+sudo apt install nginx -y
+sudo systemctl start jenkins
+```
+# Pipeline
+```
+sign in the jenkins and install necessary plugins
+GitHub Integration plugin
+NodeJS plugin
+Create the Pipeline job and configure the Git Repo and pipeline path 
+Configure the Git webhook to trigger the pipeline
+```
